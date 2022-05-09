@@ -41,7 +41,7 @@ main {
 }
 
 .logo > img {
-  width: 7rem;
+  width: 4.1rem;
 }
 
 .highlighted-link {
@@ -109,6 +109,14 @@ nav ul li a:hover {
   color: var(--color-contrast);
 }
 
+.img-circle {
+  width: 10rem;
+  clip-path: circle(3.5rem);
+}
+
+.title-section {
+  text-align: center;
+}
 
 .title-section > h1 {
   text-align: center;
@@ -428,8 +436,171 @@ label.quiz-option {
     grid-template-columns: 1fr;
     grid-gap: 8rem;
   }
- 
+}
 
-  
-  
+
+
+
+/* Animaciones */
+
+/* fuente: https://stackoverflow.com/questions/7318462/changing-background-image-with-css3-animations */
+
+
+.summary-photos, .detail-bio-photo {
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+.summary-photos {
+  animation-duration: 10s;
+}
+
+.detail-bio-photo {
+  animation-duration: 60s;
+}
+
+.neil-armstrong, .neil-armstrong-detail {
+  content: url('../img/neil-armstrong-01.jpg');
+}
+
+.neil-armstrong:hover, .neil-armstrong-detail {
+  animation-name: animation-neil-armstrong;
+}
+
+.buzz-aldrin, .buzz-aldrin-detail {
+  content: url('../img/buzz-aldrin-01.jpg');
+}
+
+.buzz-aldrin:hover, .buzz-aldrin-detail {
+  animation-name: animation-buzz-aldrin;
+}
+
+.pete-conrad, .pete-conrad-detail {
+  content: url('../img/pete-conrad-01.jpg');
+}
+
+.pete-conrad:hover, .pete-conrad-detail {
+  animation-name: animation-pete-conrad;
+}
+
+.alan-l-bean, .alan-l-bean-detail {
+  content: url('../img/alan-l-bean-01.jpg');
+}
+
+.alan-l-bean:hover, .alan-l-bean-detail {
+  animation-name: animation-alan-l-bean;
+}
+
+.alan-shepard, .alan-shepard-detail  {
+  content: url('../img/alan-shepard-01.jpg');
+}
+
+.alan-shepard:hover, .alan-shepard-detail {
+  animation-name: animation-alan-shepard ;
+}
+
+@keyframes animation-neil-armstrong {
+  0% {
+    content: url('../img/neil-armstrong-02.jpg');
+  }
+  20% {
+    content: url('../img/neil-armstrong-03.jpg');
+  }
+  40% {
+    content: url('../img/neil-armstrong-04.jpg');
+  }
+  60% {
+    content: url('../img/neil-armstrong-05.jpg');
+  }
+  80% {
+    content: url('../img/neil-armstrong-06.jpg');
+  }
+  100% {
+    content: url('../img/neil-armstrong-01.jpg');
+  }
+}
+
+@keyframes animation-buzz-aldrin {
+  0% {
+    content: url('../img/buzz-aldrin-02.jpg');
+  }
+  20% {
+    content: url('../img/buzz-aldrin-03.jpg');
+  }
+  40% {
+    content: url('../img/buzz-aldrin-04.jpg');
+  }
+  60% {
+    content: url('../img/buzz-aldrin-05.jpg');
+  }
+  80% {
+    content: url('../img/buzz-aldrin-06.jpg');
+  }
+  100% {
+    content: url('../img/buzz-aldrin-01.jpg');
+  }
+}
+
+@keyframes animation-pete-conrad {
+  0% {
+    content: url('../img/pete-conrad-02.jpg');
+  }
+  20% {
+    content: url('../img/pete-conrad-03.jpg');
+  }
+  40% {
+    content: url('../img/pete-conrad-04.jpg');
+  }
+  60% {
+    content: url('../img/pete-conrad-05.jpg');
+  }
+  80% {
+    content: url('../img/pete-conrad-06.jpg');
+  }
+  100% {
+    content: url('../img/pete-conrad-01.jpg');
+  }
+}
+
+@keyframes animation-alan-l-bean {
+  0% {
+    content: url('../img/alan-l-bean-02.jpg');
+  }
+  20% {
+    content: url('../img/alan-l-bean-03.jpg');
+  }
+  40% {
+    content: url('../img/alan-l-bean-04.jpg');
+  }
+  60% {
+    content: url('../img/alan-l-bean-05.jpg');
+  }
+  80% {
+    content: url('../img/alan-l-bean-06.jpg');
+  }
+  100% {
+    content: url('../img/alan-l-bean-01.jpg');
+  }
+}
+
+@keyframes animation-alan-shepard {
+  0% {
+    content: url('../img/alan-shepard-02.jpg');
+  }
+  20% {
+    content: url('../img/alan-shepard-03.jpg');
+  }
+  40% {
+    content: url('../img/alan-shepard-04.jpg');
+  }
+  60% {
+    content: url('../img/alan-shepard-05.jpg');
+  }
+  80% {
+    content: url('../img/alan-shepard-06.jpg');
+  }
+  100% {
+    content: url('../img/alan-shepard-01.jpg');
+  }
 }
