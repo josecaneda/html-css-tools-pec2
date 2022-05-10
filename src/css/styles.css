@@ -66,6 +66,8 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 40%;
+
+  
 }
 
 .title-text {
@@ -603,4 +605,37 @@ label.quiz-option {
   100% {
     content: url('../img/alan-shepard-01.jpg');
   }
+}
+
+/* .zoom {
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-name: animation-zoom;
+}
+
+@keyframes animation-zoom {
+  0% {
+    transform: scale(1, 1);
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+
+  100% {
+     transform: scale(2, 2); 
+  }
+} 
+*/
+
+
+
+.nasa-logo {
+  width: 16rem;
+  padding: 1rem;
+
+
 }
