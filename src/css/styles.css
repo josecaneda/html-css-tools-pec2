@@ -177,7 +177,7 @@ footer {
 .footer-nav ul {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   justify-content: start;
   padding: 0;
 }
@@ -394,54 +394,6 @@ label.quiz-option {
   text-align: center;
 }
 
-@media screen and (max-width: 750px) {
-  nav ul {
-    grid-template-columns: 1fr;
-    grid-gap: 0.6rem;
-  }
-
-  nav li {
-    text-align: center;
-  }
-
-  .box-links {  
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .footer-nav ul {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-nav li {
-
-    text-align: center;
-  }
-
-  .box-icons {
-   
-    text-align: center;
-  }
-
-  .box-summary-biographies {
-    grid-gap: 8rem;
-    
-  }
-
-  .box-summary-biography, .box-summary-biography:nth-child(even) {
-    grid-template-columns: 1fr;
-    grid-template-areas: "bio-photo" 
-                          "bio-text";
-  }
-
-  .box-presentation, .box-external-links {
-    grid-template-columns: 1fr;
-    grid-gap: 8rem;
-  }
-}
-
-
-
 
 /* Animaciones */
 
@@ -504,113 +456,184 @@ label.quiz-option {
 
 @keyframes animation-neil-armstrong {
   0% {
-    content: url('../img/neil-armstrong-02.jpg');
+    content: url('../img/neil-armstrong-01.jpg');
   }
   20% {
-    content: url('../img/neil-armstrong-03.jpg');
+    content: url('../img/neil-armstrong-02.jpg');
   }
   40% {
-    content: url('../img/neil-armstrong-04.jpg');
+    content: url('../img/neil-armstrong-03.jpg');
   }
   60% {
-    content: url('../img/neil-armstrong-05.jpg');
+    content: url('../img/neil-armstrong-04.jpg');
   }
   80% {
-    content: url('../img/neil-armstrong-06.jpg');
+    content: url('../img/neil-armstrong-05.jpg');
   }
   100% {
-    content: url('../img/neil-armstrong-01.jpg');
+    content: url('../img/neil-armstrong-06.jpg');
   }
 }
 
 @keyframes animation-buzz-aldrin {
   0% {
-    content: url('../img/buzz-aldrin-02.jpg');
+    content: url('../img/buzz-aldrin-01.jpg');
   }
   20% {
-    content: url('../img/buzz-aldrin-03.jpg');
+    content: url('../img/buzz-aldrin-02.jpg');
   }
   40% {
-    content: url('../img/buzz-aldrin-04.jpg');
+    content: url('../img/buzz-aldrin-03.jpg');
   }
   60% {
-    content: url('../img/buzz-aldrin-05.jpg');
+    content: url('../img/buzz-aldrin-04.jpg');
   }
   80% {
-    content: url('../img/buzz-aldrin-06.jpg');
+    content: url('../img/buzz-aldrin-05.jpg');
   }
   100% {
-    content: url('../img/buzz-aldrin-01.jpg');
+    content: url('../img/buzz-aldrin-06.jpg');
   }
 }
 
 @keyframes animation-pete-conrad {
   0% {
-    content: url('../img/pete-conrad-02.jpg');
+    content: url('../img/pete-conrad-01.jpg');
   }
   20% {
-    content: url('../img/pete-conrad-03.jpg');
+    content: url('../img/pete-conrad-02.jpg');
   }
   40% {
-    content: url('../img/pete-conrad-04.jpg');
+    content: url('../img/pete-conrad-03.jpg');
   }
   60% {
-    content: url('../img/pete-conrad-05.jpg');
+    content: url('../img/pete-conrad-04.jpg');
   }
   80% {
-    content: url('../img/pete-conrad-06.jpg');
+    content: url('../img/pete-conrad-05.jpg');
   }
   100% {
-    content: url('../img/pete-conrad-01.jpg');
+    content: url('../img/pete-conrad-06.jpg');
   }
 }
 
 @keyframes animation-alan-l-bean {
   0% {
-    content: url('../img/alan-l-bean-02.jpg');
+    content: url('../img/alan-l-bean-01.jpg');
   }
   20% {
-    content: url('../img/alan-l-bean-03.jpg');
+    content: url('../img/alan-l-bean-02.jpg');
   }
   40% {
-    content: url('../img/alan-l-bean-04.jpg');
+    content: url('../img/alan-l-bean-03.jpg');
   }
   60% {
-    content: url('../img/alan-l-bean-05.jpg');
+    content: url('../img/alan-l-bean-04.jpg');
   }
   80% {
-    content: url('../img/alan-l-bean-06.jpg');
+    content: url('../img/alan-l-bean-05.jpg');
   }
   100% {
-    content: url('../img/alan-l-bean-01.jpg');
+    content: url('../img/alan-l-bean-06.jpg');
   }
 }
 
 @keyframes animation-alan-shepard {
   0% {
-    content: url('../img/alan-shepard-02.jpg');
-  }
-  20% {
-    content: url('../img/alan-shepard-03.jpg');
-  }
-  40% {
-    content: url('../img/alan-shepard-04.jpg');
-  }
-  60% {
-    content: url('../img/alan-shepard-05.jpg');
-  }
-  80% {
-    content: url('../img/alan-shepard-06.jpg');
-  }
-  100% {
     content: url('../img/alan-shepard-01.jpg');
   }
+  20% {
+    content: url('../img/alan-shepard-02.jpg');
+  }
+  40% {
+    content: url('../img/alan-shepard-03.jpg');
+  }
+  60% {
+    content: url('../img/alan-shepard-04.jpg');
+  }
+  80% {
+    content: url('../img/alan-shepard-05.jpg');
+  }
+  100% {
+    content: url('../img/alan-shepard-06.jpg');
+  }
 }
+
+.box-nasa-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 
 .nasa-logo {
   width: 16rem;
   padding: 1rem;
-
-
 }
+
+
+
+
+@media screen and (max-width: 750px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+    grid-gap: 0.6rem;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  .box-links {  
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .footer-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-nav li {
+
+    text-align: center;
+  }
+
+  .box-icons {
+   
+    text-align: center;
+  }
+
+  .box-summary-biographies {
+    grid-gap: 8rem;
+    
+  }
+
+  .box-summary-biography, .box-summary-biography:nth-child(even) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "bio-photo" 
+                          "bio-text";
+  }
+
+  .box-presentation, .box-external-links {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+  }
+
+  .box-nasa-logo {
+    justify-content: center;
+  }
+
+  .img-circle {
+    display: none;
+  }
+}
+
