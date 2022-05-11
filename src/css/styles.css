@@ -237,6 +237,10 @@ footer {
   border: 1px solid black;
 }
 
+.box-summary-biography > img:hover {
+  border: 1px solid var(--color-contrast-2);
+}
+
 .p-bio-summary {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -578,23 +582,15 @@ label.quiz-option {
   
 }
 
-
-
-
 .box-nasa-logo {
   display: flex;
   justify-content: flex-start;
 }
 
-
-
 .nasa-logo {
   width: 16rem;
   padding: 1rem;
 }
-
-
-
 
 @media screen and (max-width: 750px) {
   nav {
