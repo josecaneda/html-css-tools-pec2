@@ -238,7 +238,7 @@ footer {
 }
 
 .box-summary-biography > img:hover {
-  border: 1px solid var(--color-contrast-2);
+  border: 1px solid var(--color-contrast);
 }
 
 .p-bio-summary {
