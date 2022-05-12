@@ -1,4 +1,4 @@
-# PEC1. Herramientas HTML y CSS
+# PEC2. Herramientas HTML y CSS
 
 **José Caneda**  
 **jcaneda@uoc.edu**

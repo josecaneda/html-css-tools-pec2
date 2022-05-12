@@ -40,7 +40,7 @@ main {
   background-color: var(--color-main-background-color);
 }
 
-.logo > img {
+.logo img {
   width: 4.1rem;
 }
 
@@ -570,16 +570,11 @@ label.quiz-option {
   animation-iteration-count: infinite;
   animation-name: animation-title-background;
   animation-direction: normal;
-  
-  
-  
 }
 
 @keyframes animation-title-background {
   to { background-position-y: 0 }
-
   from { background-position-y: 100% }
-  
 }
 
 .box-nasa-logo {
